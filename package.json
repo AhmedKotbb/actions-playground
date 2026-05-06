@@ -1,0 +1,9 @@
+{
+  "name": "actions-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "bash src/test.sh"
+  }
+}
