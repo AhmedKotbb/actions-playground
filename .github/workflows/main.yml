@@ -2,7 +2,7 @@ name: First Workflow
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   example-job:
@@ -10,10 +10,10 @@ jobs:
     steps:
       - name: Print a welcome message
         run: echo "Welcome to our first GitHub Actions Workflow!"
-        
+
       - name: Checkout Repository
         uses: actions/checkout@v6.0.2
-        
+
       - name: List repository files
         run: ls -la
-        
+
