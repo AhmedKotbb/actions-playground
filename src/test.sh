@@ -2,7 +2,7 @@
 
 EXPECTED_OUTPUT="Hello, Test!"
 
-OUTPUT=$(node -e "console.log(require('./main.js')('Test'))")
+OUTPUT=$(node -e "console.log(require('./src/main.js')('Test'))")
 
 if [ "$OUTPUT" == "$EXPECTED_OUTPUT" ]; then
   echo "Test passed"
