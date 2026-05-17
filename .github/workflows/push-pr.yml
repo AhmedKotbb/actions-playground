@@ -3,16 +3,6 @@ on:
     branches:
       - main
       - "release/**"
-    paths:
-      - 'src/**'
-      - 'test/**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'tsconfig.json'
-      - 'tsconfig.node.json'
-      - 'tsconfig.app.json'
-      - 'tsconfig.spec.json'
-      - 'tsconfig.base.json'
   pull_request:
     branches:
       - main
@@ -23,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v4
 
       - name: Run Tests
         run: npm run test
